@@ -1,0 +1,6 @@
+<span *ngFor="let item of array" 
+      [ngClass]="{'active': item == 'ATTIVO', 
+                  'inactive': item == 'SOSPESO', 
+                  'scheduled': item == 'PROGRAMMATO'}">
+  {{ item }}
+</span><br>
